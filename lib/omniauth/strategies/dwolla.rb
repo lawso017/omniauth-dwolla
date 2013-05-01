@@ -35,7 +35,7 @@ module OmniAuth
         access_token.options[:mode] = :query
         access_token.options[:param_name] = :oauth_token
         @raw_info ||= MultiJson.load(access_token.get('https://www.dwolla.com/oauth/rest/users/').body)
-        logger.info @raw_info
+        puts @raw_info
       end
 
      end
