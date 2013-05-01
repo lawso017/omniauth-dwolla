@@ -11,11 +11,11 @@ module OmniAuth
         :token_url => '/oauth/v2/token'
       }
 
-      uid { raw_info['id'] }
+      uid { raw_info['Id'] }
 
       info do
         {
-          :name => raw_info['name'],
+          :name => raw_info['Name'],
         }
       end
       
