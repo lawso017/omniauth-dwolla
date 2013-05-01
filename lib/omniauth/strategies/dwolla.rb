@@ -1,5 +1,5 @@
 require 'omniauth-oauth2'
-require 'dwolla'
+require 'dwolla-ruby'
 
 module OmniAuth
   module Strategies
